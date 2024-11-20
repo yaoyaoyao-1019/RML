@@ -1,0 +1,19 @@
+{
+    "model_name": "resnet8",
+
+    "learning_rate": 0.1,
+    "schedule": [80, 120],
+    "gamma": 0.1,
+    "batch_size": 512,
+    "num_epochs": 160,
+    "num_workers": 4,
+    "augmentation": 1,
+    "cuda": 1,
+
+    "dataset": "cifar10",
+
+    "teacher_model": "resnet18",
+    "teacher_resume": "cheap_exp/CIFAR10/kd_cheap_resnet18/cheap_resnet18/best_model_104.tar",
+    "temperature": 4,
+    "alpha": 0.9
+}
